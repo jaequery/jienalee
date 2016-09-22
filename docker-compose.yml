@@ -1,0 +1,9 @@
+app:
+ image: jaequery/php
+ command: /start.sh
+ environment:
+ - VIRTUAL_HOST=www.jienalee.com,jienalee.com,jienalee.docker
+# restart: always
+ volumes:
+ - .:/web
+ tty: true
